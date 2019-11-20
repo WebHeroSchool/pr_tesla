@@ -6,3 +6,150 @@
     <title>Tesla</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+	<div class="wrapper">   <!--буду использовать для центрирования (Tesla Landing)-->
+      <!--HEADER-->
+      <header class="header">
+       <div class="heder-wrap">  <!--для выравнивания и общих наслудуемых настроек-->
+  	  	  <nav class="header__nav">  <!--menu bar-->
+            <div class="header__nav-logo"> 
+            	<a href="!#" class="header__logo-link">         		
+          		<img src="./img/tesla-wordmark-red.svg" alt="Tesla">
+      	        </a>
+      	    </div>
+             <ul class="nav__list"> 
+                <li class="nav__item">	
+          	       <a href="!#" class="nav__link">Model S</a>
+          	    </li>   
+          	    <li class="nav__item">	
+          	       <a href="!#" class="nav__link">Model X</a>
+          	    </li>    
+                <li class="nav__item">	
+          	       <a href="!#" class="nav__link">Model 3</a>
+          	    </li>
+          	    <li class="nav__item">	
+          	       <a href="!#" class="nav__link">Roadster</a>
+          	    </li>
+          	    <li class="nav__item">	
+          	       <a href="!#" class="nav__link">Energy</a>
+          	    </li>
+          	    <li class="nav__item">	
+          	       <a href="!#" class="nav__link">Магазин</a>
+          	    </li>
+          	    <li class="nav__item">	
+          	       <a href="!#" class="nav__link">Войти</a>
+          	    </li>
+          	</ul>   
+            <div class="header__nav-menu">
+      	       <a href="!#" class="header__menu-link">
+      	       <img src="./img/menu.svg" alt="гамбургер меню">
+      	       </a>
+      	    </div>   
+          </nav>
+        </div>  
+      </header>	
+<section class="presentation"> <!--вступительная часть-->
+	<div class="wrapper">
+	    <h1 class="presentation__title title">Model S</h1>
+        <p class="presentation__subtitle">Добро пожаловать в будущее!</p> 
+        <img class="presentation__img" src="./img/tesla logo + car.jpg" alt="Краcный автомобиль Tesla модель S с логотипом">
+    </div>
+
+    <div class="presentation__benefits"> 
+    	<div class="benefits__speed">
+  	  	    <span class="speed__img"><img src="./img/speed.svg" alt="Спидометр"></span>
+  	  	    <span class="speed__value">2,7</span>
+  	  	    <span class="speed__time">сек</span>
+  	  	    <span class="speed__km/hr">0-100 км/час</span>
+  	    </div>
+  	    <div class="benefits__road">  <!--группа 632 --> 
+  	  	    <span class="road__img"><img src="./img/road icon.svg" alt="символ 'Дорога'"></span>
+  	  	    <span class="road__value">632</span>
+  	  	    <span class="road__km">км</span>
+  	  	    <span class="road__distance">запас хода</span>
+  	  	</div>
+  	  	<div class="benefits__order">  <!--Testdrive1 + order--> 
+  	  	    <span class="steering__img"><img src="./img/steering-wheel.svg" alt="рулевое колесо"></span>
+  	  	    <button type="submit" class="order__btn button">Заказать</button>
+  	    </div>
+  	</div>
+
+  	<div class="scroll__img"><img src="./img/arrow.svg" alt="стрелочка"></div>
+</section>
+
+<section class="content">
+	<div class="content__wrap">
+		<h2 class="content__title title">Model S</h2> 
+		<img class="content__img-cockpit" src="./img/2013-tesla-model-s-cockpit.jpg" alt="cockpit">
+		<div class="content__rectangle-right rectangle"> <!--Пропишу общие св-ва для красных прямоугольников-->
+            <p class="rectangle-right__title">Будущее вождения</p>
+            <p class="rectangle-right__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+            <div class="rectangle-right__box-screen"> <!--Группа screen-->  	
+            	  	<span class="box-screen__img"><img src="./img/display.svg" alt="display"></span>
+            	  	<span class="box-screen__size">17</span>
+  	  	        	<span class="box-screen__inch">дюймов</span>
+  	  	        	<span class="box-screen__text">Большой дисплей</span>
+            </div>
+            <div class="rectangle-right__box-wi-fi"> <!--Группа wifi--> 
+            		<span class="box-wi-fi__img"><img src="./img/wifi.svg" alt="значок 'wi-fi'"></span>
+            	  	<span class="box-wi-fi__soft">Беспроводное обновление ПО</span>
+  	  	        	<span class="box-wi-fi__text ">Повышенная функциональность</span>
+  	  	    </div>
+  	  	    <div class="rectangle-right__box-capacity"> <!--Группа bag capacity--> 
+  	  	        <span class="box-capacity__img"><img src="./img/bag.svg" alt="значок 'бак'"></span>
+  	  	        <span class="box-capacity__volume">894</span>
+            	<span class="box-capacity__liter">литра</span>
+  	  	        <span class="box-capacity__text">Объем грузового пространства</span>
+            </div>
+            <div class="rectangle-right__box-order"> <!--Группа Group 15--> 
+  	  	        <span class="box-order__img"><img src="./img/symbol.svg" alt="значок 'внимание' "></span>
+  	  	        <button type="submit" class="box-order__btn button">Заказать</button>
+  	  	    </div>
+  	  	</div>
+  	</div>    
+  	  	<!--возможно тут понадобится обертка-->
+  	  	<div class="content__rectangle-left rectangle"> 
+  	  		<p class="rectangle-left__title">Самый безопасный автомобиль в мире</p>
+            <p class="rectangle-left__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
+            <p class="rectangle-left__subtitle">Оценка защиты:</p>
+            <ul class="rectangle-left__list"> 
+                <li class="rectangle-left__item">Спереди</li>   
+          	    <li class="rectangle-left__item">Сбоку</li>   
+                <li class="rectangle-left__item">Сбоку<span>(стойка)</span></li>
+          	    <li class="rectangle-left__item">ВОДИТЕЛЬ</li>         	    
+          	    <li class="rectangle-left__item">ПАССАЖИР</li>
+          	</ul>
+          	<div class="rectangle-left__star">
+          	    <span class="star__img"><img src="./img/star.svg" alt="звезда"></span> <!--буду разбираться как составить массив из 25 в процессе написания CSS>-->
+          	</div>  
+          	<div class="rectangle-left__box-safe"> <!--Группа Group 13.1-->
+          	    <span class="box-safe__shield"><img src="./img/security.svg" alt="значок 'щит'"></span>
+  	  	        <span class="box-safe__five-stars">5 звез</span>
+            	<span class="box-safe__text">безопасности</span>
+            </div>
+            <div class="rectangle-left__box-order">
+  	  	        <span class="box-order__img"><img src="./img/symbol.svg" alt="значок 'внимание' "></span>
+  	  	        <button type="submit" class="box-order__btn button">Заказать</button>
+  	  	    </div>  
+  	  	</div> 
+  	<div class="content__picture"> <!--снимок-->  
+        <div class="content__big-text">Model S</div>
+        <div class="content__car-frame"> <!--или wrap Упаковка-->
+            <img class="car-frame__img" src="./img/car frame.jpg" alt="рама автомобиля">            
+            <div class="car-frame__protection"> <!--Группа Group 14 указатели "защита сверху"-->
+  	  	        <span class="protection__img"><img src="./img/line-big.svg" alt="указатель"></span>
+  	  	        <span class="protection__text">Защита от удара спереди</span>
+            	</div> 
+            	<div class="car-frame__proteс-sideways"> <!--Группа Group 15 указатели "защита сбоку "-->
+  	  	        	<span class="proteс-sideways__img"><img src="./img/line-medium.svg" alt="указатель"></span>
+  	  	        	<span class="proteс-sideways__text">Защита от удара сбоку</span>
+            	</div> 
+            	<div class="Car-frame__min-risk"> <!--Группа Group 16 указатели -->
+  	  	        	<span class="min-risk__img"><img src="./img/line-small.svg" alt="указатель"></span>
+            	  	<span class="min-risk__text">Минимальный риск перевернуться в аварии</span>
+            	</div> 
+        </div> 
+    </div>    
+           <img src="./img/group 2.svg" alt="логотип школы">  
+</body>
+</html>
