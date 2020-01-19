@@ -13,98 +13,84 @@ body {
     font-weight: 400;
     color: #000000;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
 
+}
+
+.header {
+    /*min-height: 77px;*/
+    /*background: green;*/
 }
 
 .wrapper { 
     max-width: 93%; /*1338px;*/
     margin: 0 auto;
- }
- 
+    /*min-height: 51px;*/
+    /*background: #6cc372;*/
+    margin-bottom: 74px;
+
+}    
+
 .header__wrapper {
-	
-	display: flex;
+    
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    /*background: #c4c4c4;*/
 
 }
+
+
+
 
 
 .nav__list {
-
     display: flex;
     flex-wrap: wrap;
-}
-
-.nav__item {
-    margin-right: 64px;
- } 
-
- 
- .nav__item:nth-child(1) {
-   text-decoration: underline;
-  
- } 
-
-.nav__item:nth-child(5) {
-    margin-right: 221.14px;
- } 
-
- .nav__item:nth-child(6) {
-    margin-right: 30px;
 
 }
-
-.nav__item:nth-child(7) {
-    margin-right: 30px;
- }   
 
 
 .nav__item {
     list-style-type: none;
-}
+    margin-right: 64px;
+ } 
 
+ .nav__item:nth-child(1) {
+    height: 25px;
+    border-bottom: 2px solid #E51937;
+    display: inline-block;
+    color: red;
+}  
+
+.nav__item:nth-child(5) {
+    margin-right: 221.14px;
+ }  
+
+.nav__item:nth-child(6) {
+    margin-right: 30px; 
+}    
 
 .nav__link{
     font-weight: 600;
     text-decoration: none;
     color: #000000
 }
-
-
+ 
 .nav__link:hover,.nav__link:focus {
     color: #E51937;
-}
-
-
-
-/*.nav__link:activ {*/
-    /*color: #E51937;*/
-    /*text-decoration: underline;*/
-/*}*/
-
-
-
-
-
-/*header style end*/
-
-/*presentation style start*/
-
+}    
 
 .wrap {
-	position: relative;
-	top: 19.3%; /*278px;*/
-	width: 100%;
+    position: relative;
+    top: 19.3%; /*278px;*/
+    width: 100%;
     height: 594px;
     /*left: -74px;*/
     background: url(../img/red-car-tesla.jpg) no-repeat center;
     background-size: auto;
-     
-        /*margin-top: 5.5%; /*79px;*/   /*134-55(высота header)*/*/
-}
+}    
 
 .presentation__title {
     text-align: center;
@@ -112,27 +98,25 @@ body {
     font-size: 562.5%;   /*90px;*/
     line-height: 110%; /*110px;*/
     margin-bottom: 0px;
-       /*margin-bottom: -10px;*/
-
 }
 
 .presentation__subtitle {
-	position: relative;
-	top: 0px;
-	text-align: center;
+    /*position: relative;*/
+    /*top: 0px;*/
+    text-align: center;
     font-weight: 500;
     font-size: 94%;  /*15px;*/
     line-height: 18px;
     margin-bottom: 34.9%; /*503px;*/ 
     margin-top: 0px; 
-}   
+}  
 
 .presentation__benefits {
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;  /*2.78%;*/
+    margin-bottom: 40px; 
 }
 
 .speed__img {
@@ -141,7 +125,7 @@ body {
 } 
 
 .road__img {
-	margin-right: 105px;  /*7.29%;*/
+    margin-right: 105px;  /*7.29%;*/
 
 }   
 
@@ -150,17 +134,16 @@ body {
 }
 
 .test-drive-red__img {
-	display: none;
+    display: none;
 }
 
-
- .order__btn {
+.order__btn {
     width: 160px;
     height: 40px;
     padding: 7px 11px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 81.25%;
     color: #E51937;
     background: transparent;
     border-style: solid;
@@ -168,40 +151,55 @@ body {
  } 
 
   .vector {
-    /*position: absolute;*/
     width: 28px;
     height: 14px;
-    margin: 0 auto;
-    /*left: 706px;*/
-    /*top: 860px;  */
-} 
-  
-  @media screen and (max-width: 768px) {
+    margin: 0 auto; 
+}         
+
+
+
+
+@media screen and (max-width: 1333px) {
   .nav__list {
     display: none;
 }
 
 .wrap {
-	background-size: 100%;
+    background-size: 100%;
 
 }
-.test-drive__img {
-	display: none;
+
+}
+
+@media screen and (max-width: 860px) {
+  .nav__list {
+    display: none;
+}
+
+.wrap {
+    background-size: 100%;
+    height: 490px;
+
 }
 
 .presentation__benefits {
-	display: grid;
-	grid-template-columns: 1fr 1fr;                        
-    grid-template-rows: 1fr 1fr;
+    height: 194px;
+    display: grid;
+    grid-template-columns: 245px 245px;                        
+    grid-template-rows: 97px 97px;
+    align-content: center;
+    justify-content: center;
     text-align: center;
 
 }
 
 
-
+.test-drive__img {
+    display: none;
+}
 
 .test-drive-red__img {
-	display: inline-block;
+    display: inline-block;
 }
 
 .order__btn {
@@ -223,8 +221,149 @@ height: 83.12px;
 width: 162.87px;
 height: 30.37px;
 }
+.order__btn {
+    width: 220.84px;
+    height: 55.21px;
+    font-size: 100%;
+}    
 
 }
+
+@media screen and (max-width: 600px) {
+  .nav__list {
+    display: none;
+}
+
+.wrap {
+    background-size: 100%;
+    height: 490px;
+
+
+}
+
+.presentation__title {
+    font-size: 312.5%;  
+}   
+
+.presentation__subtitle {
+    font-size: 62.5%;  
+}  
+
+.presentation__benefits {
+     height: 194px;
+    display: grid;
+    grid-template-columns: 245px 245px;                        
+    grid-template-rows: 97px 97px;
+    align-content: center;
+    text-align: center;
+
+}
+
+   
+
+.test-drive__img {
+    display: none;
+}
+
+.test-drive-red__img {
+    display: inline-block;
+}
+
+.order__btn {
+   background: #E51937;
+   color: #FFFFFF;
+}
+
+.speed__img {
+width: 220.7px;
+height: 80.26px;
+}
+
+.road__img  {
+width: 200.64px;
+height: 83.12px;
+}
+
+.test-drive-red__img {
+width: 162.87px;
+height: 30.37px;
+}
+.order__btn {
+    width: 220.84px;
+    height: 55.21px;
+    font-size: 100%;
+}    
+
+}
+
+@media screen and (max-width: 375px) {
+  .nav__list {
+    display: none;
+}
+
+.wrap {
+    background-size: 100%;
+    height: 290px;
+
+}
+
+.presentation__title {
+    font-size: 312.5%;  
+}   
+
+.presentation__subtitle {
+    font-size: 62.5%;  
+}  
+
+   
+
+
+.presentation__benefits {
+    height: 147px;
+    display: grid;
+    grid-template-columns: 151.5px 151.5px;                        
+    grid-template-rows: 73.5px 73.5px;
+    /*align-content: center;*/
+    justify-content: center;
+    text-align: center;
+
+}
+
+.test-drive__img {
+    display: none;
+}
+
+.test-drive-red__img {
+    display: inline-block;
+}
+
+.order__btn {
+   background: #E51937;
+   color: #FFFFFF;
+}
+
+.speed__img {
+width: 127px;
+height: 53px;
+}
+
+.road__img  {
+width: 115px;
+height: 53px;
+}
+
+.test-drive-red__img {
+width: 118px;
+height: 22px;
+}
+.order__btn {
+    width: 160px;
+    height: 40px;
+    font-size: 81.25%;
+}    
+
+}
+
 
 
 
