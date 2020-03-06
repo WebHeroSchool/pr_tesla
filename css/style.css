@@ -1,0 +1,607 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 93.75%; /*15px*/
+    line-height: 112.5%;/*18px*/
+    font-weight: 400;
+    color: #000000;
+    
+}
+
+.presentation {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+   /*position: static;*/
+    margin: 0 auto;
+    padding: 24px 60px 0 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 59px; /*от Menu bar до Model S*/
+}
+
+.logo-wrap {
+    background: url(../img/Tesla-logo-Red.png);  
+    background-size: contain; 
+    width: 166px;
+    height: 51px;
+    margin-right: 100px; /*двигала приблизительно*/
+}
+
+.nav__item, .menu__item {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__item {
+    margin-right: 46px;
+}
+
+.menu__item {
+    margin-right: 30px; 
+}
+
+.nav__item:nth-child(1) {
+    height: 22px;
+    border-bottom: 2px solid #E51937;
+    display: inline-block;
+    color: #E51937;
+    margin-right: 64.14px;
+}  
+
+.nav__item:nth-child(2) {
+    margin-right: 24.86px;
+}
+
+.nav__item:nth-child(3) {
+    margin-right: 44px;
+}
+
+
+.presentation__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 90px; /*562.5%*/
+    line-height: 110px; /*110px;*/
+    height: 90px; 
+    margin: 0px;
+}
+
+.presentation__subtitle {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px; /*в сомнениях ???*/
+    /*margin-top: 0px; */
+    height: 15px;
+}  
+
+
+.wrap {
+    background: url(../img/Tesla-Wordmark-Red.png) no-repeat center;
+    background-size: 100% auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 120px; /*поднимаю вверх на (90px(Teyle) +15px(subtitle) +15px (margin subtitle), относительно контейнера .presentation;*/
+    margin: 0 auto; 
+
+}
+
+.red-car-img {
+    display: inline-block;
+    position: relative;
+    top: 144px;
+    margin: 0;
+} 
+
+.presentation__benefits-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px; /*от параметров до красной стрелки*/  
+}
+
+.presentation__benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 14px; /*от параметров до теcтдрайва*/
+}
+
+.benefits__params {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin-right: 81px;
+}
+
+.speed__img {
+    width: 46px;
+    height: 34.13px;
+    margin-right: 14px;
+}
+
+.road__img {
+    width: 30.5px;
+    height: 50px;
+    margin-right: 13.8px;
+}
+
+.params__time, .params__length {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    margin: 0;
+}
+
+.params__time-units, .params__length-unit {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    left: 6px;
+}
+
+.params__distance, .params__reserve {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+}
+
+.benefits__order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__test-drive {
+    font-style: normal;
+    font-weight: 800; /*значение bold получается тонким*/
+    font-size: 13px;
+    line-height: 16px;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+}
+
+.order__test-drive:before {
+    content: "";
+    background: url(../img/steering-wheel.svg) no-repeat;
+    background-size: contain;
+    height: 22px;
+    width: 22px;
+    margin-right: 7px;
+} 
+
+.order__test-drive:hover::before {
+    content: "";
+    background: url(../img/steering-wheel-red.svg) no-repeat;
+    background-size: contain;
+    height: 22px;
+    width: 22px;
+}
+
+.order__test-drive:hover {
+    color: #E51937;
+    cursor: pointer;
+}
+
+.order__test-drive:active,
+.order__test-drive:focus {
+    outline: none;
+}
+
+.order__button {
+    font-style: normal;
+    font-weight: 800; /*значение bold получается тонким*/
+    font-size: 13px;
+    line-height: 16px;
+    background: none;
+    border: solid 2px #E51937;
+    box-sizing: border-box;
+    color: #E51937;
+    height: 40px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.order__button:hover {
+    color: #FFF;
+    cursor: pointer;
+    background: #E51937;
+}
+
+.order__button:active,
+.order__button:focus {
+    outline: none;
+}
+
+.scroll {
+    width: 28px;
+    height: 14px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1333px) {
+ 
+  .menu__nav, .menu__item {
+    display: none;
+  } 
+ }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .presentation  {
+  position: relative;
+  bottom: 0px; 
+  height: 100%;
+
+ }
+
+  .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 24px 33px 0 15.32px;
+ }
+
+  .menu__nav, .menu__item {
+  display: none;
+  } 
+
+  .menu__item-burger {
+   width: 35.23px;
+   height: 22.02px;
+ }
+  
+.wrap {
+  background: url(../img/Tesla-Wordmark-Red.png) no-repeat center top;
+  background-size: contain;
+  text-align: center;
+  height: 271.5px;
+  width: 100%;
+  position: relative;
+  bottom: 35px; 
+  margin-bottom: 170px; /*подбирала вручную*/
+ }
+
+ .red-car-img  {
+  position: relative;
+  top: 101px; /*86+15*/
+  width: 672.6px;
+  height: 327.64px;
+ }
+
+ .presentation__benefits-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 63px;
+ }
+
+  .presentation__benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  width: 63%;
+  }
+
+  .benefits__params {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin-right: 21px;
+  }
+
+  .speed__img {
+  height: 50px;
+  width: 66px;
+  margin-right: 20px;
+  }
+
+  .road__img {
+  height: 72px;
+  width: 44px;
+  margin-right: 15px;
+  position: relative;
+  top: 3px;  
+    }
+
+  .params-value {
+   padding-bottom: 9px; 
+    }
+
+  .params__time,
+  .params__length {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  margin: 0;
+  }
+
+ .params__time-units,
+ .params__length-unit {
+  position: relative;
+  left: 9px;
+  bottom: 6px;
+ }
+
+ .benefits__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 54%; /* от 768px*/
+ }
+
+ .order__test-drive {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  background: none;
+  border: none;
+  color: #E51937;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  padding: 0; 
+ }
+
+  .order__test-drive:before {
+  content: "";
+  background: url(../img/steering-wheel-red.svg) no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 5px;
+  margin-right: 16px;
+ }
+   
+  .order__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  background: #E51937;
+  border: solid 2px #E51937;
+  box-sizing: border-box;
+  color: #FFF;
+  height: 55px;
+  width: 221px;
+  text-transform: uppercase;
+  padding: 0;
+ }
+
+   .scroll__img {
+   height: 14px;
+   width: 28px;
+   margin: 0 auto;
+
+ }
+ 
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+ 
+ body {
+  margin: 0;
+ }
+
+ .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 5px 21px 0 2px;
+ }
+
+ .logo-wrap {
+  background: url(../img/Tesla-logo-Red.png);  
+  background-size: contain;  
+  height: 42px;
+  width: 138px;
+ }
+
+.menu__nav, .menu__item {
+    display: none;
+ }
+
+ .menu__shop {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ }
+
+ .menu__item-burger {
+  height: 15px;
+  width: 24px;
+ }
+
+ .presentation__title {
+   font-style: normal;
+   font-weight: 600; 
+   font-size: 50px;
+   line-height: 61px; 
+   text-align: center;
+   height: 50px; 
+   margin: 0;
+ }
+
+ .presentation__subtitle {        
+   font-style: normal;
+   font-weight: 500; 
+   font-size: 10px;
+   line-height: 12px; 
+   text-align: center;
+   height: 10px;
+ }
+
+
+  .wrap {
+  background: url(../img/Tesla-Wordmark-Red.png) no-repeat center;
+  background-size: contain;
+  text-align: center;
+  height: 139px;
+  width: 100%;
+  position: relative;
+  bottom: 2px;
+  margin-bottom: 86px;
+ }
+
+ .red-car-img {
+  width: 357px;
+  height: 166px;
+  position: relative;
+  top: 41px; 
+ }
+ 
+  .presentation__benefits-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+ }
+
+ .presentation__benefits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 43px;
+  width: 283px;
+ }
+ 
+ .benefits__params {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin-right: 15px;
+ }
+ 
+ .speed__img {
+  width: 38.14px;
+  height: 28.7px;
+  margin-right: 14px;
+ }
+ 
+ .road__img {
+  width: 25.29px;
+  height: 41px;
+  margin-right: 11px;
+ }
+
+ .params-value {
+  padding-bottom: 0;
+ }
+ 
+  .params__time,
+  .params__length {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 33px;
+  margin: 0;
+ }
+ 
+  .params__time-units,
+  .params__length-unit {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 18px;
+   position: relative;
+   left: 8px;
+ }
+
+ 
+  .params__distance,
+  .params__reserve {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 10px;
+   line-height: 12px;
+ }
+ 
+ .benefits__order {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 87%;
+ }
+ 
+ .order__test-drive {
+   font-style: normal;
+   font-weight: bold;
+   font-size: 13px;
+   line-height: 16px;
+   background: none;
+   border: none;
+   color: #E51937;
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   margin-right: 0;
+   padding: 0;
+ }
+ 
+ .order__test-drive:before {
+  content: "";
+  background: url(../img/steering-wheel-red.svg) no-repeat;
+  background-size: contain;
+  height: 22px;
+  width: 22px;
+  margin-right: 7px;
+ }
+ 
+ .order__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  background: #E51937;
+  border: solid 2px #E51937;
+  box-sizing: border-box;
+  color: #FFF;
+  height: 40px;
+  width: 160px;
+  text-transform: uppercase;
+  padding: 0;
+ }
+ 
+  .scroll {
+  width: 28px;
+  height: 14px;
+  margin: 0 auto;
+ }
+
+}
