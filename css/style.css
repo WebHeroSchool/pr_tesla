@@ -1,9 +1,9 @@
-html {
-    box-sizing: border-box;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-}
+﻿/*html {*/
+    /*box-sizing: border-box;*/
+/*}*/
+/**, *::before, *::after {*/
+    /*box-sizing: inherit;*/
+/*}*/
 
 body {
     max-width: 1440px;
@@ -240,7 +240,431 @@ body {
     width: 28px;
     height: 14px;
     margin: 0 auto;
+    margin-bottom: 37px; 
 }
+
+.features {
+    display: grid;
+    grid-template-columns: 69.4% 30.6%;
+}
+
+.features-cockpit {
+    background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat bottom left;
+    background-size: auto 94%; /*подбром и сравнивая с макетом*/
+}
+
+.features__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    color: #E51937;
+    padding: 6px 0 0 80px;
+    margin: 64px 0;
+}
+
+.features-content {
+    background: #E51937;
+    color: #FFF;
+    padding: 51px 44px 63px 52px;
+}
+.content {
+    margin-bottom: 54px;
+ /*padding: 0 3px 0 3px;*/
+}
+
+.content__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0 0 11px;
+}
+
+.content__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    width: 316px;
+    height: 206px;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 44px; 
+}    
+
+.display__img {    
+    width: 36px;
+    height: 53px;
+    position: relative;
+    top: 12px;
+    /*padding-top: 12px;*/
+    margin-right: 19px; 
+}
+
+.display-content {
+    
+}
+
+.display__size, .bag-capacity__value {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    margin: 0;
+}
+
+.display__size-unit, .bag-capacity__volume-unit {    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1px;
+    position: relative;
+    left: 10px;
+}
+
+.display__text, .bag-capacity__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px; 
+    margin: 0;
+}
+
+.wifi {
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 25px;
+   position: relative;
+   right: 4px;
+}
+
+.wifi__img {
+    width: 44px;
+    height: 34px;
+    position: relative;
+    top: 17px;
+    margin-right: 20px;
+}
+
+.wifi__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    margin:0 0 5px;
+}
+
+.wifi__text-plus {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px; 
+   margin: 0;
+}
+
+.bag-capacity {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 171px;
+}
+
+.bag-capacity__img {
+    width: 36px;
+    height: 52px;
+    position: relative;
+    top: 13px;
+    margin-right: 24px;
+}
+
+.features-buttons {
+    display: flex;
+    justify-content: space-between;
+ /*margin-bottom: 63px;*/
+}
+
+.features-attention {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    /*margin-right: 22px;*/
+}
+
+.features-attention:before {
+    content: "";
+    background: url(../img/attention.svg) no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+.features__order {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    border: solid 2px #FFF;
+    width: 160px;
+    height: 40px; 
+}
+
+.features-attention:focus,
+.features__order:focus {
+    outline: none;
+}
+
+.features-attention:hover {
+    color: #000;
+    font-size: 16px;
+}
+
+.features-attention:hover::before {
+    display: none;
+}    
+
+.features__order:hover {
+    color: #E51937;
+    background: #FFF;
+}
+
+.safest-car {
+    display: grid;
+    grid-template-columns: 30.6% 69.4%;
+}
+
+
+.safest-car-wrap {
+    background: #E51937;
+    color: #FFF;
+    padding: 51px 68px 60px 56px;
+}
+
+.safest-car-content {
+    margin-bottom: 49px;
+}
+
+.content__caption {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0 0 12px;
+}
+
+.content__info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.analytics {
+    margin-bottom: 102px;
+    padding: 0 25px 0 0; /* двигаю звездочки влево от границы*/
+}
+
+.analytics__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 29px;
+}
+
+.analytics-class {
+    display: flex;
+    justify-content: space-between;
+}
+
+.analytics-class__text {
+   font-style: normal;
+   font-weight: 600; /* bold получается очень жирный*/
+   font-size: 17px;
+   line-height: 21px;
+   text-transform: uppercase;
+   margin: 0 0 16px 0;
+}
+
+.analytics-class__text-small {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    opacity: 0.7;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.stars__pic {
+    background: url(../img/Star.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+}
+
+.analytics-five {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: 9px;
+    margin-bottom: 60px;
+}
+
+.analytics-five__img {
+    width: 62px;
+    height: 74px;
+    position: relative;
+    top: 9px;
+    margin-right: 22px;
+}
+
+.analytics-five__content {
+  
+}
+
+.analytics-five__value {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    height: 50px;
+    margin: 0;
+}
+
+.analytics-five__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    height: 25px;
+    margin: 0;
+}
+
+.safest-car-button {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 15px;
+}
+ 
+.safest-car__attention {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFF;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    left: 4px;
+
+    
+}
+
+.safest-car__attention:before {
+    content: "";
+    background: url(../img/attention.svg) no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+.safest-car__order {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    border: solid 2px #FFF;
+    height: 40px;
+    width: 160px; 
+    position: relative;
+    left: 27px;
+}
+
+.safest-car__attention:focus,
+.safest-car__order:focus {
+    outline: none;
+}
+
+.safest-car__attention:hover {
+    color: #000;
+    font-size: 16px;
+}
+
+.safest-car__attention:hover::before {
+    display: none;
+}    
+
+.safest-car__order:hover {
+    color: #E51937;
+    background: #FFF;
+}
+
+
+.imge__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 200px;
+    line-height: 244px;
+    color: #E51937;
+    opacity: 0.1;
+    margin: 0;
+    position: relative;
+    top: 97px;
+    left: 189px;
+}
+
+.imge__car-frame {
+    width: 1049px;
+    height: 592px;
+    position: relative;
+    bottom: 73px;
+    right: 95px;
+    /*margin-bottom: 87px;*/
+}
+.footer {
+    position: relative;
+    bottom: 13px;
+    left: 889px;
+}
+
+
 
 @media screen and (max-width: 1333px) {
  
@@ -404,9 +828,255 @@ body {
    height: 14px;
    width: 28px;
    margin: 0 auto;
+ }
+   .features {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 52% 48%;
+    min-height: 1024px;
+ 
+ }
 
+   .features-cockpit {
+    background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat;
+    background-size: cover;
+    
+ }
+   
+   .features__title {
+    text-align: right;
+    padding: 8px 58px 0 0;
+    margin: 0;
+ }
+    
+    .content {
+    grid-area: a;
+ }
+
+    .display {
+    grid-area: b;
+ }
+    .wifi {
+    grid-area: c;
+ }
+   .bag-capacity {
+   grid-area: d;
+ }
+
+   .features-buttons {
+   grid-area: e;
+ }
+
+  .features-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: 
+    "a b"
+    "a c"
+    "a d"
+    "e e";
+  padding: 56px 49px 52px 34px;
+ }
+
+  .content__title {
+    margin-bottom: 20.51px;
+ }
+
+  .display {
+    padding-left: 78px;
+    margin-bottom: 21px;
+ }
+
+  .wifi {
+    padding-left: 79px;
+    margin-bottom: 21px;
+ }
+   
+   .bag-capacity {
+    padding-left: 79px;
  }
  
+   .features-buttons {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-top: 37px;
+
+ }
+
+   .features-attention {
+    margin-left: 125px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+ }
+  
+   .features-attention:before {
+    content: "";
+    background: url(../img/attention.svg) no-repeat;
+    background-size: contain;
+    width: 31.18px;
+    height: 31.18px;
+    margin-right: 10px;
+ }
+
+    .features__order {
+    margin-right: 104px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    background: none;
+    border: solid 3px #FFF;
+    width: 220.84px;
+    height: 55.21px; 
+ }
+
+    .features-attention:focus,
+    .features__order:focus {
+    outline: none;
+ }
+
+   .features-attention:hover {
+    color: #000;
+    font-size: 20px;
+
+ }
+
+   .features-attention:hover::before {
+    display: none;
+}    
+
+    .features__order:hover {
+    color: #E51937;
+    background: #FFF;
+ }
+
+   .safest-car {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 52.5% 47.5%;
+  height: 1025px;
+ }
+ 
+ .safest-car-wrap {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 56% 44%; 
+  grid-template-rows: 70% 30%;
+  padding: 62.8px 55px 63.8px 34px;
+ }
+
+ .content__info {
+  width: 316px;
+ }
+  
+  .analytics {
+   padding: 0;
+  }
+
+.analytics__title {
+    margin-top: 0;
+    /*padding-right: 28px;*/
+ }
+  .analytics-five {
+  display: none;
+ }
+
+ .safest-car-button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    grid-column: 1 / 3;
+    justify-self: center;
+    align-self: start;
+    width: 100%;
+    padding-top: 60px;
+
+ }
+
+ .safest-car__attention {
+    margin-left: 125px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+ }
+
+ .safest-car__attention:before {
+    content: "";
+    background: url(../img/attention.svg) no-repeat;
+    background-size: contain;
+    width: 31.18px;
+    height: 31.18px;
+    margin-right: 10px;
+ }
+
+    .safest-car__order {
+    margin-right: 104px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    background: none;
+    border: solid 3px #FFF;
+    width: 220.84px;
+    height: 55.21px; 
+ }
+
+    .safest-car__attention:focus,
+    .safest-car__order:focus {
+    outline: none;
+ }
+
+   .safest-car__attention:hover {
+    color: #000;
+    font-size: 20px;
+ }
+
+   .safest-car__attention:hover::before {
+    display: none;
+}    
+
+    .safest-car__order:hover {
+    color: #E51937;
+    background: #FFF;
+ }
+
+
+.imge__title {
+   width: 665.77px;
+   height: 192.36px; 
+   font-style: normal;
+   font-weight: 600;
+   font-size: 148px;
+   line-height: 180px;
+   padding: 0;
+   position: relative;
+   top: 37.6px;
+   left: 98.7px;
+  }
+
+  .imge__car-frame {
+   width: 750.15px;
+   height: 423.34px;
+   position: relative;
+   bottom: 105px;
+   right: 4px;
+ }
+
+  .footer {
+   display: none;
+ }
+
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -602,6 +1272,98 @@ body {
   width: 28px;
   height: 14px;
   margin: 0 auto;
+  margin-bottom: 5px;
+ }
+
+.features {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 49% 51%;
+  min-height: 597px;
+ }
+ 
+ .features-cockpit {
+  background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat 30% 40%;
+  background-size: cover;
+  height: 337px;
+  position: relative;
+  top: 5px;
+  }
+ 
+ .features__title {
+  display: none;
+ }
+
+ .features-content {
+  padding: 18px 30px 34px 28px;
+  /*height: 304px;*/
+ }
+
+ .conten {
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 0;
+ }
+ 
+ .content__title {
+  margin: 0 0 9px;
+ }
+
+  .display, .wifi, .bag-capacity,
+  .advantages-buttons, .features-buttons {
+    display: none;
+  }
+
+.safest-car {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 49% 51%; 
+  min-height: 598px;
+ }
+ 
+ .safest-car-wrap {
+  padding: 18px 20px 0 34px;
+  grid-row: 2 / 3;
+ }
+ 
+ .safest-car-content {
+  margin-bottom: 0;
+  padding: 0;
+ }
+
+ .analytics, .analytics-five,
+ .safest-car-button {
+    display: none;
+ }
+ 
+
+
+ .safest-car__imge{
+   width: 931px;
+   height: 269px;
+ }
+
+ .imge__title {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 100px;
+   line-height: 122px;
+   font-style: normal;
+   /*padding: 0;*/
+   position: relative;
+   top: 25px;
+   left: 0;
+  }
+
+  .imge__car-frame {
+    width: 361.83px;
+    height: 204.19px;
+    position: relative;
+    bottom: 57.5px;
+    left: 8px;
+ }
+  .footer {
+  display: none;
  }
 
 }
