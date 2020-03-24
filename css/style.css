@@ -1,9 +1,9 @@
-﻿/*html {*/
-    /*box-sizing: border-box;*/
-/*}*/
-/**, *::before, *::after {*/
-    /*box-sizing: inherit;*/
-/*}*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 body {
     max-width: 1440px;
@@ -521,7 +521,7 @@ body {
 }
 
 .stars__pic {
-    background: url(../img/Star.svg) no-repeat;
+    background: url(../img/star.svg) no-repeat;
     width: 25px;
     height: 25px;
     margin-right: 4px;
@@ -972,8 +972,17 @@ body {
   padding: 62.8px 55px 63.8px 34px;
  }
 
+ .safest-car-content {
+  margin-bottom: 0;
+  padding: 0;
+ }
+ 
+ .content__caption {
+  margin: 0 0 12px;
+ }
+
  .content__info {
-  width: 316px;
+  padding-right: 66px;
  }
   
   .analytics {
@@ -1338,10 +1347,10 @@ body {
  
 
 
- .safest-car__imge{
-   width: 931px;
-   height: 269px;
- }
+ /*.safest-car__imge{*/
+   /*width: 931px;*/
+   /*height: 269px;*/
+ /*}*/
 
  .imge__title {
    font-style: normal;
@@ -1349,7 +1358,9 @@ body {
    font-size: 100px;
    line-height: 122px;
    font-style: normal;
-   /*padding: 0;*/
+   padding: 0;
+   white-space: nowrap;
+   /*width: 100%;*/
    position: relative;
    top: 25px;
    left: 0;
