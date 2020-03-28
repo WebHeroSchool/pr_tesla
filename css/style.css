@@ -1,4 +1,4 @@
-html {
+﻿html {
     box-sizing: border-box;
 }
 *, *::before, *::after {
@@ -11,8 +11,8 @@ body {
     margin: 0 auto;
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 93.75%; /*15px*/
-    line-height: 112.5%;/*18px*/
+    font-size: 15px; /*93.75%*/
+    line-height: 18px ;/*112.5%*/
     font-weight: 400;
     color: #000000;
     
@@ -24,7 +24,6 @@ body {
 }
 
 .header {
-   /*position: static;*/
     margin: 0 auto;
     padding: 24px 60px 0 43px;
     display: flex;
@@ -103,7 +102,7 @@ body {
 }
 
 .red-car-img {
-    display: inline-block;
+    /*display: inline-block;*/
     position: relative;
     top: 144px;
     margin: 0;
@@ -287,8 +286,10 @@ body {
     font-size: 15px;
     line-height: 18px;
     margin: 0;
-    width: 316px;
-    height: 206px;
+    /*text-align: center;*/
+    /*width: 316px;*/
+    /*height: 206px;*/
+    
 }
 
 .display {
@@ -666,15 +667,24 @@ body {
 
 
 
-@media screen and (max-width: 1333px) {
+@media (min-width: 1025px) and (max-width: 1353px) {
  
   .menu__nav, .menu__item {
     display: none;
   } 
+  .wrap {
+    background-size: contain;
+  }  
+
  }
 
 
+
 @media (min-width: 768px) and (max-width: 1024px) {
+  
+  .presentation {
+  height: 100%;
+ }
   
   .presentation  {
   position: relative;
@@ -702,7 +712,7 @@ body {
   
 .wrap {
   background: url(../img/Tesla-Wordmark-Red.png) no-repeat center top;
-  background-size: contain;
+  background-size: cover; /*или contain?*/
   text-align: center;
   height: 271.5px;
   width: 100%;
@@ -728,7 +738,7 @@ body {
 
   .presentation__benefits {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /*space-between;*/
   align-items: center;
   margin: 0 auto;
   margin-bottom: 55px;
@@ -740,7 +750,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: auto;
-  margin-right: 21px;
+  margin-right: 67px; /*21px;*/
   }
 
   .speed__img {
@@ -779,7 +789,7 @@ body {
 
  .benefits__order {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /*space-between;*/
   align-items: center;
   width: 54%; /* от 768px*/
  }
@@ -795,7 +805,7 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  margin-right: 0;
+  margin-right: 34.51px;
   padding: 0; 
  }
 
@@ -848,7 +858,8 @@ body {
     padding: 8px 58px 0 0;
     margin: 0;
  }
-    
+
+
     .content {
     grid-area: a;
  }
@@ -883,6 +894,10 @@ body {
     margin-bottom: 20.51px;
  }
 
+  .content__text {
+    padding-right: 30px;
+  }
+
   .display {
     padding-left: 78px;
     margin-bottom: 21px;
@@ -899,9 +914,11 @@ body {
  
    .features-buttons {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
+    text-align: center;
     justify-items: center;
     padding-top: 37px;
+
 
  }
 
@@ -1060,8 +1077,11 @@ body {
     background: #FFF;
  }
 
+    .safest-car__imge {
+      text-align: center;
+    }
 
-.imge__title {
+    .imge__title {
    width: 665.77px;
    height: 192.36px; 
    font-style: normal;
@@ -1071,14 +1091,15 @@ body {
    padding: 0;
    position: relative;
    top: 37.6px;
-   left: 98.7px;
+   left: 75px;
+   /*left: 98.7px;*/
   }
 
   .imge__car-frame {
    width: 750.15px;
    height: 423.34px;
    position: relative;
-   bottom: 105px;
+   bottom: 115px;
    right: 4px;
  }
 
@@ -1145,21 +1166,22 @@ body {
 
 
   .wrap {
-  background: url(../img/Tesla-Wordmark-Red.png) no-repeat center;
-  background-size: contain;
+  background: url(../img/Tesla-Wordmark-Red.png) no-repeat 45% 5%;
+  background-size: auto 80%;
   text-align: center;
-  height: 139px;
+  /*height: 139px;*/
   width: 100%;
   position: relative;
-  bottom: 2px;
-  margin-bottom: 86px;
+  bottom: 10px;
+  margin-bottom: 60px;
  }
 
  .red-car-img {
-  width: 357px;
-  height: 166px;
+  /*width: 357px;*/
+  /*height: 166px;*/
   position: relative;
   top: 41px; 
+  width: 95%;
  }
  
   .presentation__benefits-wrap {
@@ -1172,7 +1194,7 @@ body {
 
  .presentation__benefits {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 43px;
@@ -1184,7 +1206,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: auto;
-  margin-right: 15px;
+  margin-right: 41px;
  }
  
  .speed__img {
@@ -1233,7 +1255,7 @@ body {
  
  .benefits__order {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 87%;
  }
@@ -1249,7 +1271,7 @@ body {
    text-transform: uppercase;
    display: flex;
    align-items: center;
-   margin-right: 0;
+   margin-right: 25px;
    padding: 0;
  }
  
@@ -1294,7 +1316,7 @@ body {
  .features-cockpit {
   background: url(../img/2013-tesla-model-s-cockpit.png) no-repeat 30% 40%;
   background-size: cover;
-  height: 337px;
+  /*height: 337px;*/
   position: relative;
   top: 5px;
   }
@@ -1304,7 +1326,7 @@ body {
  }
 
  .features-content {
-  padding: 18px 30px 34px 28px;
+  padding: 18px 32px 34px 28px;
   /*height: 304px;*/
  }
 
@@ -1316,6 +1338,10 @@ body {
  
  .content__title {
   margin: 0 0 9px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  white-space: nowrap;
  }
 
   .display, .wifi, .bag-capacity,
@@ -1345,12 +1371,14 @@ body {
     display: none;
  }
  
-
-
- /*.safest-car__imge{*/
-   /*width: 931px;*/
-   /*height: 269px;*/
- /*}*/
+  .safest-car__imge {
+    text-align: center;
+    width: 100%;
+    overflow: hidden; /* прятать выходящий за пределы текст */ 
+    white-space: nowrap; /* запрет на перенос текста */
+    word-wrap: normal; /* для IE */ 
+    text-overflow: clip; /* Текст обрезается по размеру области */
+ }
 
  .imge__title {
    font-style: normal;
@@ -1360,11 +1388,11 @@ body {
    font-style: normal;
    padding: 0;
    white-space: nowrap;
-   /*width: 100%;*/
    position: relative;
    top: 25px;
    left: 0;
-  }
+   /*margin: 0 auto;*/
+ }
 
   .imge__car-frame {
     width: 361.83px;
@@ -1372,6 +1400,7 @@ body {
     position: relative;
     bottom: 57.5px;
     left: 8px;
+    /*margin: 0 auto;*/
  }
   .footer {
   display: none;
