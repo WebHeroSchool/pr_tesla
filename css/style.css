@@ -667,7 +667,7 @@ body {
 
 
 
-@media (min-width: 1025px) and (max-width: 1353px) {
+@media (max-width: 1353px) {  /*(min-width: 1025px) and*/
  
   .menu__nav, .menu__item {
     display: none;
@@ -680,7 +680,7 @@ body {
 
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 768px) {  /*(min-width: 768px) and  (max-width: 1024px)*/
   
   .presentation {
   height: 100%;
@@ -1109,7 +1109,7 @@ body {
 
 }
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 500px) { /*(min-width: 375px) and (max-width: 767px)*/
  
  body {
   margin: 0;
